@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>愚人之旅 - ホーム</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="愚人之旅">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><span>ホーム</span></a></li>
+                <li><a href="characters.html"><span>キャラクター</span></a></li>
+                <li><a href="news.html"><span>ニュース</span></a></li>
+                <li><a href="events.html"><span>イベント</span></a></li>
+                <li><a href="community.html"><span>コミュニティ</span></a></li>
+            </ul>
+        </nav>
+        <button id="musicControlButton">⏸️</button> <!-- 添加控制按钮 -->
+    </header>
+
+    <main>
+        <section class="banner">
+            <img src="images/banner.jpg" alt="愚人之旅 Banner">
+        </section>
+        
+        <section class="feature-slider">
+            <div class="slider-container">
+                <div class="slides">
+                    <div class="slide active" data-index="0">
+                        <img src="images/publicity1.png" alt="Feature 1">
+                        <div class="caption">
+                            <h2>幻想的な世界観</h2>
+                            <p>プレイヤーは星や月などの魔法のシンボルが散りばめられた、美しく神秘的な世界を冒険します。ゲームはタロットカードのテーマに基づいており、各キャラクターには独自の背景と物語があります。</p>
+                        </div>
+                    </div>
+                    <div class="slide" data-index="1">
+                        <img src="images/publicity2.png" alt="Feature 2">
+                        <div class="caption">
+                            <h2>ユニークなキャラクター</h2>
+                            <p>各キャラクターは異なる能力と特技を持ち、ゲーム内で様々な役割を果たします。例えば、愚者、魔術師、女祭司などのキャラクターが登場し、彼らのスキルを駆使して戦略的なバトルが繰り広げられます。</p>
+                        </div>
+                    </div>
+                    <div class="slide" data-index="2">
+                        <img src="images/publicity3.jpg" alt="Feature 3">
+                        <div class="caption">
+                            <h2>戦略的なバトルシステム</h2>
+                            <p>プレイヤーはタロットカードのキャラクターを使用して、戦略的に戦いを進めます。各キャラクターのスキルと能力を組み合わせて、最適な戦略を練り、敵を打ち破ります。運命の輪が回ることで、ゲームの展開が変わり、毎回異なる体験を楽しむことができます。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="game-rules">
+            <h2><span>ゲーム規則</span></h2>
+            <div class="rule">
+                <h3>ゲーム開始</h3>
+                <p>角色选择：ゲーム開始時，プレイヤーは21人の大アルカナキャラクターからランダムに5人を選びます。プレイヤーはそのうち1人を変更するチャンスがあります。</p>
+                <p>初期設定：各プレイヤーはフールと5人のパートナーをボードの片側に配置し、ゲームを開始する準備をします。</p>
+            </div>
+            <div class="rule">
+                <h3>ターン制メカニズム</h3>
+                <p>アクションポイント：各プレイヤーはターンごとに2つのアクションポイントを持ちます。攻撃と移動のどちらも1アクションポイントを消費します。</p>
+                <p>移動：プレイヤーは自分のキャラクターを移動させることができます。各移動は1アクションポイントを消費します。移動距離と方向はキャラクターの能力とボードの状況によります。</p>
+                <p>攻撃：プレイヤーは隣接する敵を攻撃することができます。各攻撃は1アクションポイントを消費します。攻撃力と反撃メカニズムはキャラクターの属性によって決まります。</p>
+                <p>反撃：キャラクターが攻撃を受けた場合、そのキャラクターが今ターンでまだ行動していなければ、直ちに1回の反撃を行うことができます。反撃はアクションポイントを消費しませんが、1回のみ行えます。</p>
+            </div>
+            <div class="rule">
+                <h3>特殊スキル</h3>
+                <p>各キャラクターにはユニークなスキルがあり、プレイヤーは適切なタイミングで使用できます。スキル使用後にはクールダウン時間や制限条件があります。</p>
+                <p>スキルの効果には攻撃力強化、回復、保護、状態異常効果などがあります。具体的な効果はキャラクタースキル設定を参照してください。</p>
+            </div>
+            <div class="rule">
+                <h3>勝利条件</h3>
+                <p>プレイヤーは戦略的な配置とスキルの使用を通じて、相手のフールを倒し、勝利を収めます。</p>
+            </div>
+            <a href="rules.html" class="more-info-button">もっと見る >></a>
+        </section>
+
+        <section class="character-info">
+            <h1><span>キャラクター情報</span></h1>
+            <div class="character-container">
+                <img id="characterImage" src="images/魔术师.png" alt="キャラクター">
+                <div class="character-details">
+                    <h2 id="characterName">魔术师</h2>
+                    <p id="characterDescription">魔術師は自信に満ちた高い技術を持つ女性で、強力な魔法を操り、驚異的な変化をもたらします。</p>
+                    <a href="character-details.html?character=magician" class="more-info-button">もっと見る >></a>
+                </div>
+            </div>
+            <div class="character-thumbnails">
+                <img src="images/魔术师.png" alt="魔术师" onclick="switchCharacter('images/魔术师.png', '魔术师', '魔術師は自信に満ちた高い技術を持つ女性で、強力な魔法を操り、驚異的な変化をもたらします。')">
+                <img src="images/女祭司.png" alt="女祭司" onclick="switchCharacter('images/女祭司.png', '女祭司', '女教皇は神秘的で静かな女性で、深い知識と知恵を持ち、世界の秘密を解き明かします。')">
+                <img src="images/女皇.png" alt="女皇" onclick="switchCharacter('images/女皇.png', '女皇', '女帝は慈悲深く高貴な女性で、豊かさと生命力を象徴し、無限の思いやりと愛をもたらします。')">
+            </div>
+        </section>
+
+        <section class="game-video">
+            <h2><span>ゲーム動画</span></h2>
+            <video controls class="game-video">
+                <source src="videos/game_video.mp4" type="video/mp4">
+                お使いのブラウザは動画タグに対応していません。
+            </video>
+            <p><span>運命を選び、決闘を始めよう！</span></p>
+        </section>
+
+        <section class="music-player">
+            <h2><span>背景音楽</span></h2>
+            <audio id="backgroundMusic" src="music/主题曲.wav"></audio>
+        </section>
+    </main>
+
+    <footer>
+        <p><span>&copy; 2024 愚人之旅公式サイト</span></p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

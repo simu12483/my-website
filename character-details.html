@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>キャラクターの詳細</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="愚人之旅">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><span>ホーム</span></a></li>
+                <li><a href="characters.html"><span>キャラクター</span></a></li>
+                <li><a href="news.html"><span>ニュース</span></a></li>
+                <li><a href="events.html"><span>イベント</span></a></li>
+                <li><a href="community.html"><span>コミュニティ</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="character-details-section">
+            <h1 id="characterDetailName">キャラクターの詳細</h1>
+            <p id="characterDetailDescription"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 愚人之旅公式サイト</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var params = new URLSearchParams(window.location.search);
+            var character = params.get('character');
+            var characterDetailName = document.getElementById('characterDetailName');
+            var characterDetailDescription = document.getElementById('characterDetailDescription');
+            
+            switch (character) {
+                case 'magician':
+                    characterDetailName.textContent = 'The Magician';
+                    characterDetailDescription.innerHTML = `
+                        攻撃力：6<br>
+                        ライフ：9<br>
+                        スキル：アクション・ポイントを消費し、キャラクターを選び、魔術師はコインを投げる、表が出たキャラクターは1対1の子羊になり、裏が出たキャラクターは20対20の怪物になる。
+                    `;
+                    break;
+                case 'high-priestess':
+                    characterDetailName.textContent = 'The High Priestess';
+                    characterDetailDescription.innerHTML = `
+                        攻撃力：2<br>
+                        ライフ：13<br>
+                        スキル：アクション・ポイントを2点消費することで、大神官は味方キャラクター1体の間に防御障壁を作り、そのキャラクターが受けるダメージ1つを免れることができる。 (プロテクト・バリアは1ゲームにつき1枚しか得られない）。
+                    `;
+                    break;
+                case 'empress':
+                    characterDetailName.textContent = 'The Empress';
+                    characterDetailDescription.innerHTML = `
+                        攻撃力：3<br>
+                        ライフ：12<br>
+                        スキル：このターン、攻撃を放棄して味方を回復することができる。
+                    `;
+                    break;
+                default:
+                    characterDetailName.textContent = 'キャラクターの詳細';
+                    characterDetailDescription.textContent = 'キャラクター情報が見つかりません。';
+                    break;
+            }
+        });
+    </script>
+</body>
+</html>
